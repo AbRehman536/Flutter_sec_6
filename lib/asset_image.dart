@@ -11,7 +11,7 @@ class AssetImageDemo extends StatelessWidget {
         title: Text("Assets Image"),
       ),
       body: Column(children: [
-        Image.asset("assets/images/download.jpg",width: 500,height: 300,),
+        Image.asset("assets/images/download.jpg",width: 100,height: 100,),
       ],),
     );
   }
