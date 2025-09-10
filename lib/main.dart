@@ -7,6 +7,7 @@ import 'package:flutter_sec_6/login_form_validation.dart';
 import 'package:flutter_sec_6/nested_row_column.dart';
 import 'package:flutter_sec_6/network_image.dart';
 import 'package:flutter_sec_6/row_column.dart';
+import 'package:flutter_sec_6/single_selection.dart';
 
 import 'appbardemo.dart';
 
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: LoginFormDemo(),
+      home: SingleSelectionDemo(),
     );
   }
 }
