@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sec_6/asset_image.dart';
 import 'package:flutter_sec_6/fab.dart';
+import 'package:flutter_sec_6/gridview_demo.dart';
 import 'package:flutter_sec_6/listtile_demo.dart';
 import 'package:flutter_sec_6/login_form.dart';
 import 'package:flutter_sec_6/login_form_validation.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PageViewDemo(),
+      home: GridViewDemo(),
     );
   }
 }

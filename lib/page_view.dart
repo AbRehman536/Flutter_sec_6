@@ -36,6 +36,7 @@ class _PageViewDemoState extends State<PageViewDemo> {
                   child: Column(children: [
                     Image.asset(onBoardingList[i].image.toString(),height: 400,),
                     Text(onBoardingList[i].title.toString(),style: TextStyle(fontSize: 30),),
+
                   ],),
                 ),
                 SmoothPageIndicator(
@@ -45,6 +46,7 @@ class _PageViewDemoState extends State<PageViewDemo> {
                     onDotClicked: (index){
                     }
                 ),
+                Text("Skip"),
               ],
             );
 
