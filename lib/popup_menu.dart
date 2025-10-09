@@ -30,7 +30,9 @@ class PopupMenuDemo extends StatelessWidget {
                       child: Text("Get Link")),
                   PopupMenuItem(
                       value: "Remove",
-                      child: Text("Remove")),
+                      child: ListTile(
+                        title: Text("Remove"),
+                      )),
                 ];
               },),
           )

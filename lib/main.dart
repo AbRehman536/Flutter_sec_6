@@ -17,6 +17,7 @@ import 'package:flutter_sec_6/network_image.dart';
 import 'package:flutter_sec_6/page_view.dart';
 import 'package:flutter_sec_6/popup_menu.dart';
 import 'package:flutter_sec_6/row_column.dart';
+import 'package:flutter_sec_6/screen_a.dart';
 import 'package:flutter_sec_6/single_selection.dart';
 import 'package:flutter_sec_6/tabbar_view.dart';
 
@@ -53,7 +54,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PopupMenuDemo(),
+      home: ScreenA(),
     );
   }
 }
