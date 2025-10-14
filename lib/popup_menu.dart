@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sec_6/listtile_demo.dart';
 
 class PopupMenuDemo extends StatelessWidget {
   const PopupMenuDemo({super.key});
@@ -9,34 +10,19 @@ class PopupMenuDemo extends StatelessWidget {
       appBar: AppBar(
         title: Text("Pop Up Menu"),
         backgroundColor: Colors.blue,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 20.0),
-            child: PopupMenuButton(
-              onSelected: (value){
-                ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("Selected item $value")));
-              },
-              itemBuilder: (BuildContext context) {
-                return [
-                  PopupMenuItem(
-                      value: "Preview",
-                      child: Text("Preview")),
-                  PopupMenuItem(
-                      value : "Share",
-                      child: Text("Share")),
-                  PopupMenuItem(
-                      value: "Get Link",
-                      child: Text("Get Link")),
-                  PopupMenuItem(
-                      value: "Remove",
-                      child: ListTile(
-                        title: Text("Remove"),
-                      )),
-                ];
-              },),
-          )
-        ],
+       actions: [
+         PopupMenuButton(
+           itemBuilder: (BuildContext context) {
+             return [
+               PopupMenuItem(child: TextButton(onPressed: (){
+                 Navigator.push(context, MaterialPageRoute(builder: (context)=> ListTileDemo()));
+               }, child: Text("Preview"))),
+               PopupMenuItem(child: Text("Share")),
+               PopupMenuItem(child: Text("Get Link")),
+               PopupMenuItem(child: Text("Logout")),
+             ];
+           },)
+       ],
       ),
       body: Center(child: 
         Text("Tap on 3 dot menu to open popup menu"),),

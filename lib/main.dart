@@ -16,15 +16,21 @@ import 'package:flutter_sec_6/nested_row_column.dart';
 import 'package:flutter_sec_6/network_image.dart';
 import 'package:flutter_sec_6/page_view.dart';
 import 'package:flutter_sec_6/popup_menu.dart';
+import 'package:flutter_sec_6/providers/screen_a.dart';
+import 'package:flutter_sec_6/providers/user.dart';
 import 'package:flutter_sec_6/row_column.dart';
 import 'package:flutter_sec_6/screen_a.dart';
 import 'package:flutter_sec_6/single_selection.dart';
 import 'package:flutter_sec_6/tabbar_view.dart';
+import 'package:provider/provider.dart';
 
 import 'appbardemo.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (context)=>UserProvider()),
+  ],
+  child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -34,6 +40,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -54,7 +61,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ScreenA(),
+      home: ScreenAProvider(),
     );
   }
 }
