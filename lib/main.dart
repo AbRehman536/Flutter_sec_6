@@ -6,6 +6,7 @@ import 'package:flutter_sec_6/date_time_selection.dart';
 import 'package:flutter_sec_6/dialog_box_demo.dart';
 import 'package:flutter_sec_6/drawer_menu.dart';
 import 'package:flutter_sec_6/fab.dart';
+import 'package:flutter_sec_6/google_map.dart';
 import 'package:flutter_sec_6/grid_view_task.dart';
 import 'package:flutter_sec_6/gridview_demo.dart';
 import 'package:flutter_sec_6/listtile_demo.dart';
@@ -61,7 +62,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ScreenAProvider(),
+      home: GoogleMapDemo(),
     );
   }
 }
