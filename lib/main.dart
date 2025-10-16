@@ -22,6 +22,7 @@ import 'package:flutter_sec_6/providers/user.dart';
 import 'package:flutter_sec_6/row_column.dart';
 import 'package:flutter_sec_6/screen_a.dart';
 import 'package:flutter_sec_6/single_selection.dart';
+import 'package:flutter_sec_6/stack.dart';
 import 'package:flutter_sec_6/tabbar_view.dart';
 import 'package:provider/provider.dart';
 
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: GoogleMapDemo(),
+      home: StackDemo(),
     );
   }
 }
